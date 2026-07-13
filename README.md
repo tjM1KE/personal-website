@@ -1,5 +1,7 @@
 # Personal Website
 
+![Homepage](assets/website.png)
+
 Personal portfolio built with Astro and hosted on my self-managed homelab.
 
 ## Overview
