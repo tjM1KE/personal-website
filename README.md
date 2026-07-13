@@ -1,46 +1,86 @@
-# Astro Starter Kit: Basics
+# Personal Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+Personal portfolio built with Astro and hosted on my self-managed homelab.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Overview
 
-## 🚀 Project Structure
+This repository contains the source code for my personal website. Its purpose is to document projects, technical work, and the skills I am developing across software engineering, Linux infrastructure, data engineering, and systems administration.
 
-Inside of your Astro project, you'll see the following folders and files:
+The website is intentionally simple. The focus is on showcasing projects and technical work rather than frontend design.
+
+## Technologies
+
+* Astro
+* TypeScript
+* HTML
+* CSS
+
+## Hosting
+
+The site is deployed to my homelab, which consists of a dedicated Ubuntu Server running Docker.
+
+Current deployment path:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+GitHub
+    ↓
+Astro Build
+    ↓
+Docker
+    ↓
+nginx
+    ↓
+Caddy
+    ↓
+Cloudflare Tunnel
+    ↓
+Public Website
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+The deployment pipeline will later be automated using GitHub Actions.
 
-## 🧞 Commands
+## Current Features
 
-All commands are run from the root of the project, from a terminal:
+* Responsive layout
+* Light and dark mode
+* Project showcase
+* Homelab overview
+* Fast static site generation with Astro
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Planned Features
 
-## 👀 Want to learn more?
+* Individual project pages
+* Live homelab metrics
+* Automated CI/CD deployment
+* Blog and technical notes
+* Search functionality
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Development Notes
+
+The initial version of this website was created with assistance from AI language models to accelerate frontend development and reduce time spent on boilerplate code.
+
+I have reviewed, customised, and maintain the project myself, including the content, layout, infrastructure integration, deployment, and security-related changes. AI is used as a productivity tool to speed up implementation, while I remain responsible for understanding and maintaining the codebase.
+
+## License
+
+MIT
