@@ -1,4 +1,6 @@
 ---
+import HomelabStatus from "../components/HomelabStatus.astro";
+
 const skills = [
   "Python",
   "SQL",
@@ -79,7 +81,7 @@ const homelabStack = [
         </p>
 
         <h1>
-          Welcome to my homelab!
+          Hello, World!
         </h1>
 
         <p class="intro-copy">
@@ -227,6 +229,84 @@ const homelabStack = [
           </a>
 
         </article>
+
+        <!-- Volatility surface app: replace the placeholder copy and URLs below. -->
+        <article class="project">
+          <div class="project-top">
+            <div>
+              <p class="project-type">Quantitative Finance</p>
+              <h2>Volatility Surface App</h2>
+            </div>
+
+            <p class="project-year">2026</p>
+          </div>
+
+          <p class="project-description">
+            Add a short description of your volatility surface app here.
+          </p>
+
+          <div class="stack">
+            <span>Add technology</span>
+            <span>Add model</span>
+            <span>Add data source</span>
+          </div>
+
+          <div class="project-details">
+            <div>
+              <p class="detail-label">What it does</p>
+
+              <p>
+                Add information about what users can explore, calculate or
+                visualise with the app.
+              </p>
+            </div>
+
+            <div>
+              <p class="detail-label">How it works</p>
+
+              <p>
+                Add information about the data, methodology and technologies
+                behind the app.
+              </p>
+            </div>
+          </div>
+
+          <a
+            class="text-link"
+            href="https://your-volatility-surface-app-url.example"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View app
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            class="text-link"
+            href="https://github.com/tjM1KE/your-volatility-surface-repository"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View repository
+            <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h2>Real Time Server Status</h2>
+          </div>
+
+          <p class="project-description">
+          What it does</p>
+
+          <p>
+            Live system metrics from my self-hosted homelab, collected on the server and displayed here in near real time.
+          </p>
+
+          <HomelabStatus />
+        </article>
+
       </section>
 
       <section id="about" class="shell section">
